@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'megahad';
+  username= "peter";
+  peter=Date;
+  age=30;
+    sms(){
+    this.title="peter";
+    console.log("peter");
+}
 }
