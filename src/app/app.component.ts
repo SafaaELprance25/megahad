@@ -7,6 +7,10 @@ import { HomeComponent } from './component/home/home.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(private consoleToggleService: ConsoleToggleService) 
+{
+ this.consoleToggleService.disableConsoleInProduction();
+     }
   title = 'megahad';
   username= "peter";
   peter=Date;
