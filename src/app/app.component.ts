@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HomeComponent } from './component/home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -13,5 +14,13 @@ export class AppComponent {
     sms(){
     this.title="peter";
     console.log("peter");
+    const fontSizePx = 16;
+viewchild(HomeComponent,{statechild})child!:HomeComponent;
+    add(){
+      this.child.add();
+    }
+    min(){
+      this.child.min();
+    }
 }
 }

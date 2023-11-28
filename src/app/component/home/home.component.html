@@ -7,31 +7,29 @@
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span> </span>
 </div>
- <div class="register">
+ <!--
+-->
+<label> data</label>
+<input #data value="input Text">
+<label>
+password
+</label>
+<input [value]="data.value">
+<input value="initial megahedapp" #in type="text">
+<button>click me</button>
+<div>copy value {{in.value}}</div>
+<div>{{product+productprice}}</div>
+<input [value]="product" #in type="text">
+<div>[[product+productprice]]</div>
+<div>[[product+productprice]]</div>
+<div>[[product+productprice]]</div>
+<div>[[product+productprice]]</div>
 
- 
- 
-  <form class="row g-3">
-      <div class="col-12">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
-        <p>  we'LL never share your email with anyone else.</p>
-      </div>
-      <div class="col-12">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4">
-      </div>
-      
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
-        </div>
-      </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </div>
-    </form>
-</div>
+
+
+
+<button class="btn" #button  (click)="onclickbtn(#event.target)"> click here</button>
+<button class="btn" #button (click)="onclickbtn(button.TEXT_NODE)"> click here</button>
+<button class="btn" #button (click)="onclickbtn(button.className)"> click here</button>
+<input [(ngmode)]="textvalue">
+<h2>{{textvalue}}</h2>

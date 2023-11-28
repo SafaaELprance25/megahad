@@ -1,5 +1,5 @@
 
-<div class="container-fluid">
+<!--<div class="container-fluid">
   <app-navbar></app-navbar>
 
 
@@ -22,3 +22,31 @@
   <input type="text" class="form-control" placeholder="petere" aria-label="Recipient's username" aria-describedby="button-addon2">
   <button class="btn btn-outline-secondary" type="button" id="liveAlertBtn">Button</button>
 </div>
+-->
+
+<input #phone placeholder="phone number" />
+
+<!-- lots of other elements -->
+
+<!-- phone refers to the input element; pass its `value` to an event handler -->
+<button (click)="callPhone(phone.value)">Call</button>
+
+
+<input ref-fax placeholder="fax number" />
+<button (click)="callFax(fax.value)">Fax</button>
+<app-sizer [(size)]="fontSizePx"></app-sizer>
+
+<app-sizer [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></app-sizer>
+<app-sizer [(size)]="fontSizePx"></app-sizer>
+<div [style.font-size.px]="fontSizePx">Resizable Text</div>
+<app-sizer [(size)]="fontSizePx"></app-sizer>
+<app-home></app-home>
+
+<h1>parent</h1>
+<h2>
+current count  is {{child.count}}
+</h2>
+<button
+ (click)="add()">click
+</button>
+<button (click)="min()">click</button>
