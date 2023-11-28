@@ -7,6 +7,8 @@ import { HomeComponent } from './component/home/home.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  console = console;
+
   constructor(private consoleToggleService: ConsoleToggleService) 
 {
  this.consoleToggleService.disableConsoleInProduction();
