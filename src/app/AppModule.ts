@@ -22,6 +22,8 @@ import { FormsModule } from '@angular/forms';
         SidebarComponent,
         FooterComponent,
         FormsModule,
+        childone,
+        childtwo,
     ]
 })
 export class AppModule {

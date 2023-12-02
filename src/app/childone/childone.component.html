@@ -1,0 +1,10 @@
+<p>childone works!</p>
+<h1>
+    childone{{employees.length}}
+</h1>
+<ul class="list-group" >
+    <li class="list-group-item" ngfor="let employee of employees" >
+{{ employee.name }}
+<button class="btn btn-dark float end" (click)="employeeDetails(employee)">view</button>
+    </li>
+</ul>

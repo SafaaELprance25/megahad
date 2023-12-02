@@ -23,15 +23,15 @@
   <button class="btn btn-outline-secondary" type="button" id="liveAlertBtn">Button</button>
 </div>
 -->
-
+<!-- 
 <input #phone placeholder="phone number" />
 
-<!-- lots of other elements -->
+lots of other elements 
 
-<!-- phone refers to the input element; pass its `value` to an event handler -->
+ phone refers to the input element; pass its `value` to an event handler -
 <button (click)="callPhone(phone.value)">Call</button>
-
-
+-->
+<!--
 <input ref-fax placeholder="fax number" />
 <button (click)="callFax(fax.value)">Fax</button>
 <app-sizer [(size)]="fontSizePx"></app-sizer>
@@ -44,12 +44,12 @@
 
 <h1>parent</h1>
 <h2>
-current count  is {{child.count}}
+current count  is {{mychild.count}}
 </h2>
 <button
- (click)="add()">click
+ (click)="child.add()">click
 </button>
-<button (click)="min()">click</button>
+<button (click)="child.min()">click</button>
 
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
@@ -77,3 +77,21 @@ constructor() {}
 
 {{ console.error('It will show up an error') }}
 {{ console.log('It will show up logging') }}
+<h2>root curent count is {{child.count}}</h2>
+
+
+<button (click)="child.add()">click</button>
+
+<button (click)="child.min()">click</button>-->  -->
+<div class="container">
+  <h3>
+    employees
+  </h3><div class="row">
+    <div class="col-lg-6">
+      <app-childone   (employeedata)="getData"($event)></app-childone>
+    </div>
+    <div class="col-lg-6">
+      <app-childtwo [employeesecond]="employee"></app-childtwo>
+    </div>
+    </div>
+</div>

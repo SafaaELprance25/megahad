@@ -28,3 +28,4 @@ export class HomeComponent {
   this.green=!this.green;
  }
 }
+@ViewChild(MenuComponent , {static:true }  ) child! :MenuComponent ;
