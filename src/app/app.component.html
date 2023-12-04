@@ -88,10 +88,17 @@ constructor() {}
     employees
   </h3><div class="row">
     <div class="col-lg-6">
-      <app-childone   (employeedata)="getData"($event)></app-childone>
+      <app-childone (employeedata)="getData"($event)></app-childone>
     </div>
     <div class="col-lg-6">
       <app-childtwo [employeesecond]="employee"></app-childtwo>
     </div>
     </div>
 </div>
+
+<button  routerLink="/crisis-center" routerLinkActive="active" ariaCurrentWhenActive="page">home</button>
+<button routerLink="/heroes" routerLinkActive="active" ariaCurrentWhenActive="page">user</button>
+
+
+
+<router-outlet></router-outlet>

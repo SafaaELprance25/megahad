@@ -7,6 +7,9 @@ import { HomeComponent } from "./component/home/home.component";
 import { SidebarComponent } from "./component/sidebar/sidebar.component";
 import { FooterComponent } from './component/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import{childone} from "./component/childone/childone.component";
+import{childtwo} from "./component/childtwo/childtwo.component";
+
 
 @NgModule({
     declarations: [

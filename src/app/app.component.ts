@@ -1,7 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
+// import { Component, ViewChild } from '@angular/core';
 import { HomeComponent } from './component/home/home.component';
 import{Component}from '@angular/core';
 import { Employee } from './Employee';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
